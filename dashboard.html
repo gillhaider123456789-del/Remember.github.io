@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="haider.css">
+</head>
+<body>
+
+<div class="card big">
+    <h2>Dashboard</h2>
+
+    <button onclick="toggleAddLink()">Add Link</button>
+    <button id="btnAddSub" onclick="toggleAddSub()">Add Sub-dealer</button>
+
+    <!-- Add Link Form -->
+    <div id="addLinkForm" style="display:none;">
+        <input type="text" id="site" placeholder="Website Link">
+        <input type="text" id="user" placeholder="Username">
+        <input type="text" id="pass" placeholder="Password">
+        <button onclick="addLink()">Add Link</button>
+    </div>
+
+    <!-- Add Sub-dealer Form -->
+    <div id="addSubForm" style="display:none;">
+        <input type="text" id="subUser" placeholder="Sub-dealer Username">
+        <input type="password" id="subPass" placeholder="Sub-dealer Password">
+        <button onclick="addSub()">Add Sub-dealer</button>
+    </div>
+
+    <h3>My Links</h3>
+    <ul id="list"></ul>
+
+    <button class="logout" onclick="logout()">Logout</button>
+</div>
+
+<script src="haider.js"></script>
+</body>
+</html>
